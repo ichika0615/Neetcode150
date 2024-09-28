@@ -9,7 +9,7 @@ class Solution:
         #if no n is in hashset, nothing is duplicate.
          return False
 #tc: O(n)  sc:O(n)
-
+________
 #if brute force is used
 class Solution:
     def hasDuplicate(self, nums: List[int]) -> bool:
@@ -19,4 +19,14 @@ class Solution:
                     return True
          return False
 #tc: O(n*n) sc: O(1)
+________
+#sort algorithm can be used, too.
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+         nums.sort()
+         for i in range(len(nums)-1):
+            if nums[i] == nums[i+1]:
+                return True
+         return False
+#tc: O(nlogn)  sc: O(1)
 
