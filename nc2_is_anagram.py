@@ -13,3 +13,11 @@ class Solution:
             if countS[c] != countT.get(c, 0):
                 return False
         return True
+# tc: O(s+t)  
+_______
+
+# sort algorithm can be used 
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        return sorted(s) == sorted(t)
+        
