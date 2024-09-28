@@ -20,4 +20,6 @@ _______
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         return sorted(s) == sorted(t)
+#tc: O(nlogn) sc: O(1) or O(n)
+
         
