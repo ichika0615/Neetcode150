@@ -2,7 +2,11 @@ class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         if len(s) != len(t):
             return False
-
+        
+        #two hashmaps are set. 
+        #so, iterating with each item itself is not nice. 
+        #Use indeces.
+        
         countS, countT = {}, {}
 
         for i in range(len(s)):
