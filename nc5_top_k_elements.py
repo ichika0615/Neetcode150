@@ -17,4 +17,16 @@ class Solution:
                 res.append(n)
                 if len(res) == k:
                     return res
+        return
+                    
+# If I write a code like this, this doesn't work. WHY? 
+        for i in range(len(freq) - 1, 0, -1):
+            if len(res) == k:
+                    return res
+            for n in freq[i]:
+                res.append(n)
+        return 
+# I know there's some inefficiency in this code, though.
+
+
                     
