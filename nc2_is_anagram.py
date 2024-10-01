@@ -18,7 +18,7 @@ class Solution:
                 return False
         return True
 # tc: O(s+t)  
-_______
+________
 
 # sort algorithm can be used 
 class Solution:
